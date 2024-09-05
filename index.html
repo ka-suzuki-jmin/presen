@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="16x16" href="./favicon16.png">
+    <link rel="apple-touch-icon" sizes="32x32" href="./favicon32.png">
+    <link rel="apple-touch-icon" sizes="48x48" href="./favicon48.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link id="theme" rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <script src="https://cdn.jsdelivr.net/npm/coffeescript@2.5.1/lib/coffeescript-browser-compiler-legacy/coffeescript.js"></script>
+    <script type="text/coffeescript"></script>
+    <style type="text/css">
+      .top{top:0px !important}
+      .left{text-align: left !important}
+      .small{font-size: large !important}
+      .smaller{font-size: xx-large !important}
+      .xsmaller{font-size: x-large !important}
+      .biimmain{width:65%;float:left}
+      .biimsub{width:28%;float:left}
+      /* .biimmov{height:20%;border:solid 2px #fff !important}*/
+      .biimtext{}
+    </style>
+    <!-- css-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Revテスト</h1>
+          <h3>HTML Presentations Made Easy</h3>
+          <p><small>Created byあああいう<a href="http://hakim.se">sd</a><a href="http://twitter.com/hakimel"></a></small></p>
+          <p>あか<br>いい
+            e
+          </p>
+        </section>
+        <section>
+          <div class="t">test1</div>
+        </section>
+        <section>
+          <section>
+            <div class="t">test2.1</div>
+          </section>
+          <section>
+            <div class="t">test2.2</div>
+          </section>
+        </section>
+        <section>
+          <div class="t">test3</div>
+        </section>
+        <section>
+          <h2>Heads Up</h2>
+          <p>reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser withsupport for CSS 3D transforms to see it in its full glory.</p>
+          <aside class="notes">Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).</aside>
+        </section>
+      </div>
+    </div>
+    <!-- script-->
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script type="text/coffeescript">
+      # More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize
+        controls: true
+        progress: true
+        history: true
+        center: true
+        hash: true
+        
+        transition: "slide"
+        
+        plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+        
+      
+      Reveal.configure
+        pdfSeparateFragments: false
+    </script>
+  </body>
+</html>
